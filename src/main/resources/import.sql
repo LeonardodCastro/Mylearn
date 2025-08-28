@@ -24,3 +24,8 @@ INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('2.0
 
 
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Notification test', TIMESTAMP WITH TIME ZONE '2025-08-20T03:00:00Z', false,  'Test route', 1);
+
+
+INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Classes HTML', 'Main classes of the course HTML', 1, 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKrydPFGvBDucM8_DhqgzpW5ojL-rY1-X1w&s', 1);
+INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Forum', 'For questions', 2, 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 2, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKrydPFGvBDucM8_DhqgzpW5ojL-rY1-X1w&s', 1);
+INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Bonus lives', 'Exclusive lives', 3, 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 0, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKrydPFGvBDucM8_DhqgzpW5ojL-rY1-X1w&s', 1);
