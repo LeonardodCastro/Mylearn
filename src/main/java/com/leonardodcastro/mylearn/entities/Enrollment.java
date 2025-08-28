@@ -86,4 +86,8 @@ public class Enrollment {
     public void setOnlyUpdate(boolean onlyUpdate) {
         this.onlyUpdate = onlyUpdate;
     }
+
+    public Set<Lesson> getLessonsDone() {
+        return lessonsDone;
+    }
 }
