@@ -15,3 +15,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2); -- Bob is also an INS
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1); -- Maria is STUDENT
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2); -- Maria is also an INSTRUCTOR
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3); -- Maria is ADMIN
+
+
+INSERT INTO tb_course (name,img_uri, img_gray_uri) VALUES ('Bootcamp HTML', 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKrydPFGvBDucM8_DhqgzpW5ojL-rY1-X1w&s');
