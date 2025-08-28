@@ -34,5 +34,20 @@ INSERT INTO tb_section (title, description, position, img_uri, resource_id, prer
 INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter 2', 'Learning about tags', 1, 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 1, 1);
 INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter 3', 'What is HTML?', 1, 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 1, 2);
 
-INSERT INTO tb_enrollment(user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2025-08-28T13:45:30.12345Z', null, true, false)
-INSERT INTO tb_enrollment(user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2025-08-28T13:45:30.12345Z', null, true, false)
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2025-08-28T13:45:30.12345Z', null, true, false)
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2025-08-28T13:45:30.12345Z', null, true, false)
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Class 1 from Chapter 1', 1, 1);
+INSERT INTO tb_content (id, text_content, video_uri) VALUES (1,'Introduction', 'https://www.youtube.com/watch?v=it1rTvBcfRg&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Class 2 from Chapter 1', 2, 1);
+INSERT INTO tb_content (id, text_content, video_uri) VALUES (2,'Editors', 'https://www.youtube.com/watch?v=bBP0ckEln4Y&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s&index=2');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Class 3 from Chapter 1', 3, 1);
+INSERT INTO tb_content (id, text_content, video_uri) VALUES (3,'Elements', 'https://www.youtube.com/watch?v=vIoO52MdZFE&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s&index=3');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Test from Chapter 1', 4, 1);
+INSERT INTO tb_task (id, description, question_count, approval_count, weight, due_date) VALUES (4,'Multiple choice exam', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2025-08-29T13:00:00.00Z');
+
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
