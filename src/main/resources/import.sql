@@ -51,3 +51,27 @@ INSERT INTO tb_task (id, description, question_count, approval_count, weight, du
 
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+
+
+
+
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('First feedback from task: please review it', TIMESTAMP WITH TIME ZONE '2020-12-10T13:00:00Z', true, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Second feedback: please review it', TIMESTAMP WITH TIME ZONE '2020-12-12T13:00:00Z', true, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Third feedback: please review it', TIMESTAMP WITH TIME ZONE '2020-12-14T13:00:00Z', true, '/offers/1/resource/1/sections/1', 1);
+
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/LeonardodCastro/mylearn', TIMESTAMP WITH TIME ZONE '2020-12-10T10:00:00Z', 0, null, null, 4, 1, 1);
+
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Title from topic: 2', 'Body from topic: 2', TIMESTAMP WITH TIME ZONE '2020-12-13T13:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Title from topic: 3', 'Body from topic: 3', TIMESTAMP WITH TIME ZONE '2020-12-14T13:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Title from topic: 4', 'Body from topic: 4', TIMESTAMP WITH TIME ZONE '2020-12-15T13:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Title from topic: 6', 'Body from topic: 6', TIMESTAMP WITH TIME ZONE '2020-12-17T13:00:00Z', 2, 1, 3);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Title from topic: 5', 'Body from topic: 5', TIMESTAMP WITH TIME ZONE '2020-12-16T13:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Title from topic: 1', 'Body from topic: 1', TIMESTAMP WITH TIME ZONE '2020-12-12T13:00:00Z', 1, 1, 1);
+
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1, 2);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
+
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('Try reboot your PC!', TIMESTAMP WITH TIME ZONE '2020-12-15T13:00:00Z', 1, 2);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) VALUES ('It works, thanks a lot!', TIMESTAMP WITH TIME ZONE '2020-12-20T13:00:00Z', 1, 1);
+
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
